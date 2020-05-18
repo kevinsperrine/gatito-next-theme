@@ -9,7 +9,7 @@ module.exports = {
   "widget.shadow": theme.transparent,
   "selection.background": theme.yellow,
   descriptionForeground: theme.foregroundDark,
-  errorForeground: theme.red
+  errorForeground: theme.red,
   // TODO: he have no fucking clue how it works
   // "icon.foreground": theme.foregroundDark
 };

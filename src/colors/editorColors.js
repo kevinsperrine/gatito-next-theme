@@ -51,5 +51,5 @@ module.exports = {
   "editorGutter.background": theme.background,
   "editorGutter.modifiedBackground": theme.blue,
   "editorGutter.addedBackground": theme.green,
-  "editorGutter.deletedBackground": theme.red
+  "editorGutter.deletedBackground": theme.red,
 };

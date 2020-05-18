@@ -8,5 +8,5 @@ module.exports = {
   "titleBar.activeForeground": theme.foregroundDark,
   "titleBar.inactiveBackground": theme.background,
   "titleBar.inactiveForeground": theme.foregroundDark,
-  "titleBar.border": "#30373A"
+  "titleBar.border": "#30373A",
 };

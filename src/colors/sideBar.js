@@ -11,5 +11,5 @@ module.exports = {
   "sideBarTitle.foreground": theme.foreground,
   "sideBarSectionHeader.background": theme.backgroundLight,
   "sideBarSectionHeader.foreground": theme.foreground,
-  "sideBarSectionHeader.border": theme.transparent
+  "sideBarSectionHeader.border": theme.transparent,
 };

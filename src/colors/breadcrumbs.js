@@ -8,5 +8,5 @@ module.exports = {
   "breadcrumb.background": theme.background,
   "breadcrumb.focusForeground": theme.blue,
   "breadcrumb.activeSelectionForeground": theme.blue,
-  "breadcrumbPicker.background": theme.backgroundDark
+  "breadcrumbPicker.background": theme.backgroundDark,
 };

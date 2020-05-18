@@ -7,5 +7,5 @@ module.exports = {
   "scrollbar.shadow": theme.transparent,
   "scrollbarSlider.activeBackground": theme.backgroundLight,
   "scrollbarSlider.background": "#FFFFFF0F",
-  "scrollbarSlider.hoverBackground": "#FFFFFF1F"
+  "scrollbarSlider.hoverBackground": "#FFFFFF1F",
 };

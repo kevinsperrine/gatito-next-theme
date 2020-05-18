@@ -17,5 +17,5 @@ module.exports = {
   "debugExceptionWidget.border": "#30373A",
   "editorMarkerNavigation.background": theme.backgroundDark,
   "editorMarkerNavigationError.background": theme.red,
-  "editorMarkerNavigationWarning.background": theme.yellow
+  "editorMarkerNavigationWarning.background": theme.yellow,
 };

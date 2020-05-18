@@ -17,5 +17,5 @@ module.exports = {
   "settings.textInputBorder": "#30373A",
   "settings.numberInputBackground": theme.backgroundDark,
   "settings.numberInputForeground": theme.foreground,
-  "settings.numberInputBorder": "#30373A"
+  "settings.numberInputBorder": "#30373A",
 };

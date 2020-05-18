@@ -33,21 +33,25 @@ const theme = {
     ...colors.gitColors,
     ...colors.settingsEditor,
     ...colors.breadcrumbs,
-    ...colors.snippets
+    ...colors.snippets,
   },
-  tokenColors
+  tokenColors,
 };
 
-fs.writeFile("themes/leagues-theme.json", JSON.stringify(theme,null, 2), error => {
-  const log = error
-    ? {
-        method: "error",
-        message: error
-      }
-    : {
-        method: "log",
-        message: "Theme created :-)"
-      };
+fs.writeFile(
+  "themes/leagues-theme.json",
+  JSON.stringify(theme, null, 2),
+  (error) => {
+    const log = error
+      ? {
+          method: "error",
+          message: error,
+        }
+      : {
+          method: "log",
+          message: "Theme created :-)",
+        };
 
-  console[log.method](log.message);
-});
+    console[log.method](log.message);
+  }
+);

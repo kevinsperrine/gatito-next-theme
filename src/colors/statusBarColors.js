@@ -14,5 +14,5 @@ module.exports = {
   "statusBarItem.hoverBackground": theme.background,
   "statusBarItem.prominentBackground": theme.background,
   "statusBarItem.prominentHoverBackground": theme.background,
-  "statusBar.border": "#30373A"
+  "statusBar.border": "#30373A",
 };

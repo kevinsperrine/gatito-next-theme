@@ -6,5 +6,5 @@ const theme = require("../theme");
 module.exports = {
   "button.background": theme.yellow,
   "button.foreground": theme.background,
-  "button.hoverBackground": theme.yellow
+  "button.hoverBackground": theme.yellow,
 };

@@ -10,5 +10,5 @@ module.exports = {
   "merge.incomingContentBackground": theme.backgroundDark,
   "merge.border": "#30373A",
   "editorOverviewRuler.currentContentForeground": "#A94348",
-  "editorOverviewRuler.incomingContentForeground": "#A94348"
+  "editorOverviewRuler.incomingContentForeground": "#A94348",
 };

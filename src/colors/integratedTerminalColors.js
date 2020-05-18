@@ -20,5 +20,5 @@ module.exports = {
   "terminal.ansiBrightCyan": theme.cyan,
   "terminal.ansiWhite": theme.foreground,
   "terminal.ansiBrightWhite": theme.foreground,
-  "terminal.border": "#30373A"
+  "terminal.border": "#30373A",
 };

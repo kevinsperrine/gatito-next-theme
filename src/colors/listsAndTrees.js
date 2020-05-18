@@ -21,5 +21,5 @@ module.exports = {
   "listFilterWidget.background": theme.background,
   "listFilterWidget.outline": theme.backgroundLight,
   "listFilterWidget.noMatchesOutline": theme.red,
-  "tree.indentGuidesStroke": theme.backgroundLight
+  "tree.indentGuidesStroke": theme.backgroundLight,
 };

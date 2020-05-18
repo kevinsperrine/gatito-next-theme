@@ -8,5 +8,5 @@ module.exports = {
   "panel.border": "#30373A",
   "panelTitle.activeBorder": "#30373A",
   "panelTitle.activeForeground": theme.foreground,
-  "panelTitle.inactiveForeground": theme.foregroundDark
+  "panelTitle.inactiveForeground": theme.foregroundDark,
 };

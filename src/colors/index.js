@@ -27,5 +27,5 @@ module.exports = {
   gitColors: require("./gitColors"),
   settingsEditor: require("./settingsEditor"),
   breadcrumbs: require("./breadcrumbs"),
-  snippets: require("./snippets")
+  snippets: require("./snippets"),
 };

@@ -18,5 +18,5 @@ module.exports = {
   "inputValidation.infoBorder": theme.blue,
   "inputValidation.warningBackground": theme.yellow,
   "inputValidation.warningForeground": theme.background,
-  "inputValidation.warningBorder": theme.yellow
+  "inputValidation.warningBorder": theme.yellow,
 };

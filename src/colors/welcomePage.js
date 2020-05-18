@@ -6,5 +6,5 @@ const theme = require("../theme");
 module.exports = {
   "welcomePage.buttonBackground": theme.backgroundDark,
   "welcomePage.buttonHoverBackground": "#30373A",
-  "walkThrough.embeddedEditorBackground": theme.backgroundDark
+  "walkThrough.embeddedEditorBackground": theme.backgroundDark,
 };

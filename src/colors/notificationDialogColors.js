@@ -11,5 +11,5 @@ module.exports = {
   "notifications.foreground": theme.foreground,
   "notifications.background": theme.backgroundDark,
   "notifications.border": "#30373A",
-  "notificationLink.foreground": theme.blue
+  "notificationLink.foreground": theme.blue,
 };
