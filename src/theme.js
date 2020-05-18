@@ -18,4 +18,6 @@ module.exports = {
   magenta: "#C594C5",
   cyan: "#5FB3B3",
   white: "#D4D4D4",
+
+  missing: "#F00",
 };

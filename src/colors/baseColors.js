@@ -5,7 +5,7 @@ const theme = require("../theme");
 
 module.exports = {
   "selection.background": theme.yellow,
-  "widget.shadow": theme.transparent,
+  "widget.shadow": theme.backgroundDark,
   // "icon.foreground": theme.foregroundDark
   // TODO: he have no fucking clue how it works
   descriptionForeground: theme.foregroundDark,
