@@ -30,7 +30,7 @@ module.exports = {
   "tab.unfocusedActiveModifiedBorder": "#f00",
   "tab.unfocusedHoverBackground": theme.background,
   "tab.unfocusedHoverBorder": "#f00",
-  "tab.unfocusedInactiveForeground": theme.foregroundAlpha50,
   "tab.unfocusedInactiveBackground": theme.backgroundDark,
+  "tab.unfocusedInactiveForeground": theme.foregroundAlpha50,
   "tab.unfocusedInactiveModifiedBorder": "#f00",
 };

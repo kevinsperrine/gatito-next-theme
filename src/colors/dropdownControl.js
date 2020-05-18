@@ -5,7 +5,7 @@ const theme = require("../theme");
 
 module.exports = {
   "dropdown.background": theme.backgroundDark,
-  "dropdown.listBackground": theme.backgroundDark,
   "dropdown.border": theme.backgroundLight,
   "dropdown.foreground": theme.foreground,
+  "dropdown.listBackground": theme.backgroundDark,
 };

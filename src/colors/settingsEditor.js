@@ -4,18 +4,18 @@ const theme = require("../theme");
 // https://code.visualstudio.com/docs/getstarted/theme-color-reference#_settings-editor-colors
 
 module.exports = {
+  "settings.checkboxBackground": theme.backgroundDark,
+  "settings.checkboxBorder": "#30373A",
+  "settings.checkboxForeground": theme.foreground,
+  "settings.dropdownBackground": theme.backgroundDark,
+  "settings.dropdownBorder": "#30373A",
+  "settings.dropdownForeground": theme.foreground,
   "settings.headerForeground": theme.foreground,
   "settings.modifiedItemIndicator": theme.blue,
-  "settings.dropdownBackground": theme.backgroundDark,
-  "settings.dropdownForeground": theme.foreground,
-  "settings.dropdownBorder": "#30373A",
-  "settings.checkboxBackground": theme.backgroundDark,
-  "settings.checkboxForeground": theme.foreground,
-  "settings.checkboxBorder": "#30373A",
-  "settings.textInputBackground": theme.backgroundDark,
-  "settings.textInputForeground": theme.foreground,
-  "settings.textInputBorder": "#30373A",
   "settings.numberInputBackground": theme.backgroundDark,
-  "settings.numberInputForeground": theme.foreground,
   "settings.numberInputBorder": "#30373A",
+  "settings.numberInputForeground": theme.foreground,
+  "settings.textInputBackground": theme.backgroundDark,
+  "settings.textInputBorder": "#30373A",
+  "settings.textInputForeground": theme.foreground,
 };

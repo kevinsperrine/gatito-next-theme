@@ -6,8 +6,8 @@ const theme = require("../theme");
 module.exports = {
   "peekView.border": "#30373A",
   "peekViewEditor.background": theme.backgroundDark,
-  "peekViewEditorGutter.background": theme.backgroundDark,
   "peekViewEditor.matchHighlightBackground": "#FFFFFF1F",
+  "peekViewEditorGutter.background": theme.backgroundDark,
   "peekViewResult.background": theme.backgroundDark,
   "peekViewResult.fileForeground": theme.foreground,
   "peekViewResult.lineForeground": theme.foreground,

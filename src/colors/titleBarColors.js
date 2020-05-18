@@ -6,7 +6,7 @@ const theme = require("../theme");
 module.exports = {
   "titleBar.activeBackground": theme.background,
   "titleBar.activeForeground": theme.foregroundDark,
+  "titleBar.border": "#30373A",
   "titleBar.inactiveBackground": theme.background,
   "titleBar.inactiveForeground": theme.foregroundDark,
-  "titleBar.border": "#30373A",
 };
