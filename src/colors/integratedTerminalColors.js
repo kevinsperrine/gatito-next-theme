@@ -4,6 +4,9 @@ const theme = require("../theme");
 // https://code.visualstudio.com/docs/getstarted/theme-color-reference#_integrated-terminal-colors
 
 module.exports = {
+  "terminal.background": theme.background,
+  "terminal.border": "#30373A",
+  "terminal.foreground": theme.foreground,
   "terminal.ansiBlack": theme.foregroundDark,
   "terminal.ansiBlue": theme.blue,
   "terminal.ansiBrightBlack": theme.foregroundDark,
@@ -20,5 +23,7 @@ module.exports = {
   "terminal.ansiRed": theme.red,
   "terminal.ansiWhite": theme.foreground,
   "terminal.ansiYellow": theme.yellow,
-  "terminal.border": "#30373A",
+  // "terminal.selectionBackground": theme.background,
+  "terminalCursor.background": theme.background,
+  "terminalCursor.foreground": theme.foreground,
 };
