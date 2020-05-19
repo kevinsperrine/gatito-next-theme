@@ -4,6 +4,7 @@ module.exports = {
   background: "#242B2E",
   backgroundDark: "#171C1C",
   backgroundLight: "#333D3D",
+  backgroundSlightLight: "#30373A",
 
   foreground: "#D4D4D4",
   foregroundDark: "#808080",

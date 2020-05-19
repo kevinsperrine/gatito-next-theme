@@ -5,7 +5,7 @@ const theme = require("../theme");
 
 module.exports = {
   "terminal.background": theme.background,
-  "terminal.border": "#30373A",
+  "terminal.border": theme.backgroundSlightLight,
   "terminal.foreground": theme.foreground,
   "terminal.ansiBlack": theme.foregroundDark,
   "terminal.ansiBlue": theme.blue,

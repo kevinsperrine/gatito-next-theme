@@ -10,5 +10,5 @@ module.exports = {
   "textLink.activeForeground": theme.blue,
   "textLink.foreground": theme.blue,
   "textPreformat.foreground": theme.cyan,
-  "textSeparator.foreground": "#f00",
+  "textSeparator.foreground": theme.missing,
 };

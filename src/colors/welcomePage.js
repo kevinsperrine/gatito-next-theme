@@ -4,7 +4,8 @@ const theme = require("../theme");
 // https://code.visualstudio.com/docs/getstarted/theme-color-reference#_welcome-page
 
 module.exports = {
-  "walkThrough.embeddedEditorBackground": theme.backgroundDark,
+  "welcomePage.background": theme.missing,
   "welcomePage.buttonBackground": theme.backgroundDark,
-  "welcomePage.buttonHoverBackground": "#30373A",
+  "welcomePage.buttonHoverBackground": theme.backgroundSlightLight,
+  "walkThrough.embeddedEditorBackground": theme.backgroundDark,
 };

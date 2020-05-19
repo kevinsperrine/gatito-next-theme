@@ -4,7 +4,7 @@ const theme = require("../theme");
 // https://code.visualstudio.com/docs/getstarted/theme-color-reference#_diff-editor-colors
 
 module.exports = {
-  "diffEditor.border": theme.missing,
+  "diffEditor.border": theme.foregroundDark,
   "diffEditor.diagonalFill": theme.missing,
   "diffEditor.insertedTextBackground": "#3D4F3B",
   "diffEditor.insertedTextBorder": "#FFFFFF4D",

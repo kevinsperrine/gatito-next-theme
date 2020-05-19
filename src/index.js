@@ -34,6 +34,9 @@ const theme = {
     ...colors.settingsEditor,
     ...colors.breadcrumbs,
     ...colors.snippets,
+    ...colors.debug,
+    ...colors.menuBarColors
+
   },
   tokenColors,
 };

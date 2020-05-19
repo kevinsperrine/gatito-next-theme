@@ -4,15 +4,16 @@ const theme = require("../theme");
 // https://code.visualstudio.com/docs/getstarted/theme-color-reference#_peek-view-colors
 
 module.exports = {
-  "peekView.border": "#30373A",
+  "peekView.border": theme.backgroundSlightLight,
   "peekViewEditor.background": theme.backgroundDark,
-  "peekViewEditor.matchHighlightBackground": "#FFFFFF1F",
   "peekViewEditorGutter.background": theme.backgroundDark,
+  "peekViewEditor.matchHighlightBackground": "#FFFFFF1F",
+  "peekViewEditor.matchHighlightBorder": theme.missing,
   "peekViewResult.background": theme.backgroundDark,
   "peekViewResult.fileForeground": theme.foreground,
   "peekViewResult.lineForeground": theme.foreground,
   "peekViewResult.matchHighlightBackground": "#FFFFFF1F",
-  "peekViewResult.selectionBackground": "#30373A",
+  "peekViewResult.selectionBackground": theme.backgroundSlightLight,
   "peekViewResult.selectionForeground": theme.foreground,
   "peekViewTitle.background": theme.backgroundDark,
   "peekViewTitleDescription.foreground": theme.foregroundDark,

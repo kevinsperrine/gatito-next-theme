@@ -28,4 +28,6 @@ module.exports = {
   textColors: require("./textColors"),
   titleBarColors: require("./titleBarColors"),
   welcomePage: require("./welcomePage"),
+  debug: require("./debug"),
+  menuBarColors: require("./menuBarColors"),
 };

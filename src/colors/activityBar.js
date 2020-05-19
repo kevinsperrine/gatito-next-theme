@@ -4,9 +4,9 @@ const theme = require("../theme");
 // https://code.visualstudio.com/docs/getstarted/theme-color-reference#_activity-bar
 
 module.exports = {
-  "activityBar.activeBackground": theme.missing,
-  "activityBar.activeBorder": theme.missing,
-  "activityBar.activeFocusBorder": theme.missing,
+  "activityBar.activeBackground": theme.backgroundLight,
+  "activityBar.activeBorder": theme.foreground,
+  "activityBar.activeFocusBorder": theme.foreground,
   "activityBar.background": theme.background,
   "activityBar.border": theme.backgroundLight,
   "activityBar.dropBackground": theme.backgroundDark,
