@@ -154,6 +154,8 @@
     "editorWarning.border": "#242B2E",
     "editorWarning.foreground": "#FAC863",
     "editorWhitespace.foreground": "#80808040",
+    "diffEditor.border": "#F00",
+    "diffEditor.diagonalFill": "#F00",
     "diffEditor.insertedTextBackground": "#3D4F3B",
     "diffEditor.insertedTextBorder": "#FFFFFF4D",
     "diffEditor.removedTextBackground": "#5E2629",
