@@ -20,7 +20,7 @@ module.exports = [
     name: "Keyword, Storage",
     scope: "keyword, storage.type, storage.modifier",
     settings: {
-      foreground: "#C594C5",
+      foreground: theme.magenta,
     },
   },
   {
@@ -28,7 +28,7 @@ module.exports = [
     scope:
       "keyword.operator, constant.other.color, punctuation, punctuation.definition.tag, punctuation.separator.inheritance.php, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, keyword.other.template, keyword.other.substitution",
     settings: {
-      foreground: "#5FB3B3",
+      foreground: theme.cyan,
     },
   },
   {
@@ -43,7 +43,7 @@ module.exports = [
     scope:
       "entity.name.function, meta.function-call, variable.function, support.function, keyword.other.special-method, meta.block-level",
     settings: {
-      foreground: "#6699CC",
+      foreground: theme.blue,
     },
   },
   {
@@ -58,7 +58,7 @@ module.exports = [
     scope:
       "constant.numeric, constant.language, support.constant, constant.character, variable.parameter, keyword.other.unit",
     settings: {
-      foreground: "#F99157",
+      foreground: theme.orange,
     },
   },
   {
@@ -66,7 +66,7 @@ module.exports = [
     scope:
       "string, constant.other.symbol, constant.other.key, entity.other.inherited-class, markup.heading, markup.inserted.git_gutter, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
     settings: {
-      foreground: "#99C794",
+      foreground: theme.green,
     },
   },
   {
@@ -74,7 +74,7 @@ module.exports = [
     scope:
       "entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php, meta.use.php, support.other.namespace.php, markup.changed.git_gutter",
     settings: {
-      foreground: "#FAC863",
+      foreground: theme.yellow,
     },
   },
   {
@@ -82,7 +82,7 @@ module.exports = [
     scope:
       "entity.name.module.js, variable.import.parameter.js, variable.other.class.js",
     settings: {
-      foreground: "#E15A60",
+      foreground: theme.red,
     },
   },
   {
@@ -90,7 +90,7 @@ module.exports = [
     scope: "variable.language",
     settings: {
       fontStyle: "italic",
-      foreground: "#E15A60",
+      foreground: theme.red,
     },
   },
   {
@@ -119,14 +119,14 @@ module.exports = [
     name: "Inserted",
     scope: "markup.inserted",
     settings: {
-      foreground: "#99C794",
+      foreground: theme.green,
     },
   },
   {
     name: "Deleted",
     scope: "markup.deleted",
     settings: {
-      foreground: "#E15A60",
+      foreground: theme.red,
     },
   },
   {
@@ -140,14 +140,14 @@ module.exports = [
     name: "Regular Expressions",
     scope: "string.regexp",
     settings: {
-      foreground: "#5FB3B3",
+      foreground: theme.cyan,
     },
   },
   {
     name: "Escape Characters",
     scope: "constant.character.escape",
     settings: {
-      foreground: "#5FB3B3",
+      foreground: theme.cyan,
     },
   },
   {
@@ -168,7 +168,7 @@ module.exports = [
     name: "Search Results Lines",
     scope: "entity.name.filename.find-in-files",
     settings: {
-      foreground: "#99C794",
+      foreground: theme.green,
     },
   },
   {
@@ -177,7 +177,7 @@ module.exports = [
       "tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js",
     settings: {
       fontStyle: "italic",
-      foreground: "#6699CC",
+      foreground: theme.blue,
     },
   },
   {
@@ -185,25 +185,25 @@ module.exports = [
     scope: "source.js constant.other.object.key.js string.unquoted.label.js",
     settings: {
       fontStyle: "italic",
-      foreground: "#E15A60",
+      foreground: theme.red,
     },
   },
   {
     scope: "token.info-token",
     settings: {
-      foreground: "#6796e6",
+      foreground: theme.blue, // "#6796e6",
     },
   },
   {
     scope: "token.warn-token",
     settings: {
-      foreground: "#cd9731",
+      foreground: theme.yellow, // "#cd9731",
     },
   },
   {
     scope: "token.error-token",
     settings: {
-      foreground: "#f44747",
+      foreground: theme.red, // "#f44747",
     },
   },
   {

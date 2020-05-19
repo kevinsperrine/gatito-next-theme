@@ -9,7 +9,7 @@ module.exports = {
   "statusBar.border": theme.backgroundSlightLight,
   "statusBar.debuggingBackground": theme.background,
   "statusBar.debuggingForeground": theme.foreground,
-  "statusBar.debuggingBorder": theme.missing,
+  "statusBar.debuggingBorder": theme.backgroundLight,
   "statusBar.noFolderForeground": theme.foregroundDark,
   "statusBar.noFolderBackground": theme.background,
   "statusBar.noFolderBorder": theme.missing,

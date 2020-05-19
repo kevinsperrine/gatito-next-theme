@@ -30,4 +30,5 @@ module.exports = {
   welcomePage: require("./welcomePage"),
   debug: require("./debug"),
   menuBarColors: require("./menuBarColors"),
+  debugIcons: require('./debugIcons'),
 };

@@ -35,7 +35,8 @@ const theme = {
     ...colors.breadcrumbs,
     ...colors.snippets,
     ...colors.debug,
-    ...colors.menuBarColors
+    ...colors.menuBarColors,
+    ...colors.debugIcons
 
   },
   tokenColors,

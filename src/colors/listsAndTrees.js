@@ -21,8 +21,8 @@ module.exports = {
   "listFilterWidget.background": theme.background,
   "listFilterWidget.outline": theme.backgroundLight,
   "listFilterWidget.noMatchesOutline": theme.red,
-  "list.filterMatchBackground": theme.missing,
-  "list.filterMatchBorder": theme.missing,
+  "list.filterMatchBackground": theme.foregroundDark,
+  "list.filterMatchBorder": theme.transparent,
   "tree.indentGuidesStroke": theme.backgroundLight,
   "list.deemphasizedForeground": theme.missing,
 };
