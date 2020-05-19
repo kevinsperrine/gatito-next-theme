@@ -13,5 +13,5 @@ module.exports = {
   "activityBar.foreground": theme.foreground,
   "activityBar.inactiveForeground": theme.foregroundDark,
   "activityBarBadge.background": theme.blue,
-  "activityBarBadge.foreground": theme.background,
+  "activityBarBadge.foreground": theme.backgroundDark,
 };

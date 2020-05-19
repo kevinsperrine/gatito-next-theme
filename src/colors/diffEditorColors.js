@@ -5,7 +5,7 @@ const theme = require("../theme");
 
 module.exports = {
   "diffEditor.border": theme.foregroundDark,
-  "diffEditor.diagonalFill": theme.missing,
+  "diffEditor.diagonalFill": theme.redAlpha50,
   "diffEditor.insertedTextBackground": "#3D4F3B",
   "diffEditor.insertedTextBorder": "#FFFFFF4D",
   "diffEditor.removedTextBackground": "#5E2629",
