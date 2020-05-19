@@ -15,7 +15,7 @@ module.exports = {
   "editor.foreground": theme.foreground,
   "editor.hoverHighlightBackground": theme.foregroundAlpha50,
   "editor.inactiveSelectionBackground": theme.foregroundAlpha50,
-  "editor.lineHighlightBackground": theme.backgroundLight,
+  "editor.lineHighlightBackground": theme.foregroundAlpha15,
   "editor.lineHighlightBorder": theme.transparent,
   "editor.rangeHighlightBackground": theme.foregroundAlpha50,
   "editor.rangeHighlightBorder": theme.transparent,
@@ -83,8 +83,7 @@ module.exports = {
   "editorWhitespace.foreground": theme.foregroundAlpha25,
   "problemsErrorIcon.foreground": theme.red,
   "problemsWarningIcon.foreground": theme.yellow,
-  "problemsInfoIcon.foreground": theme.blue
-
+  "problemsInfoIcon.foreground": theme.blue,
 
   // "editor.occurrencesHighlight": theme.backgroundLight,
 };

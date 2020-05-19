@@ -4,7 +4,7 @@ const theme = require("../theme");
 // https://code.visualstudio.com/docs/getstarted/theme-color-reference#_button-control
 
 module.exports = {
-  "button.background": theme.yellow,
+  "button.background": theme.blue,
   "button.foreground": theme.background,
-  "button.hoverBackground": theme.yellow,
+  "button.hoverBackground": theme.blueAlpha50,
 };
