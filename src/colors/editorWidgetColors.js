@@ -4,16 +4,16 @@ const theme = require("../theme");
 // https://code.visualstudio.com/docs/getstarted/theme-color-reference#_editor-widget-colors
 
 module.exports = {
-  "editorWidget.foreground": theme.missing,
+  "editorWidget.foreground": theme.foreground,
   "editorWidget.background": theme.backgroundDark,
   "editorWidget.border": theme.backgroundSlightLight,
-  "editorWidget.resizeBorder": theme.missing,
+  "editorWidget.resizeBorder": theme.foregroundDark,
   "editorSuggestWidget.background": theme.backgroundDark,
   "editorSuggestWidget.border": theme.backgroundSlightLight,
   "editorSuggestWidget.foreground": theme.foreground,
-  "editorSuggestWidget.highlightForeground": theme.missing,
+  "editorSuggestWidget.highlightForeground": theme.foreground,
   "editorSuggestWidget.selectedBackground": theme.backgroundSlightLight,
-  "editorHoverWidget.foreground": theme.missing,
+  "editorHoverWidget.foreground": theme.foreground,
   "editorHoverWidget.background": theme.backgroundDark,
   "editorHoverWidget.border": theme.backgroundSlightLight,
   "editorHoverWidget.statusBarBackground": theme.missing,

@@ -10,5 +10,5 @@ module.exports = {
   "panelTitle.activeBorder": theme.backgroundSlightLight,
   "panelTitle.activeForeground": theme.foreground,
   "panelTitle.inactiveForeground": theme.foregroundDark,
-  "panelInput.border": theme.missing,
+  "panelInput.border": theme.transparent,
 };

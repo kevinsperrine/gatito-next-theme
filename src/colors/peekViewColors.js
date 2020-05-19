@@ -8,7 +8,7 @@ module.exports = {
   "peekViewEditor.background": theme.backgroundDark,
   "peekViewEditorGutter.background": theme.backgroundDark,
   "peekViewEditor.matchHighlightBackground": "#FFFFFF1F",
-  "peekViewEditor.matchHighlightBorder": theme.missing,
+  "peekViewEditor.matchHighlightBorder": theme.foregroundDark,
   "peekViewResult.background": theme.backgroundDark,
   "peekViewResult.fileForeground": theme.foreground,
   "peekViewResult.lineForeground": theme.foreground,

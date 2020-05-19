@@ -20,7 +20,7 @@ const theme = {
     ...colors.editorColors,
     ...colors.diffEditorColors,
     ...colors.editorWidgetColors,
-    ...colors.peakViewColors,
+    ...colors.peekViewColors,
     ...colors.mergeConflicts,
     ...colors.panelColors,
     ...colors.statusBarColors,

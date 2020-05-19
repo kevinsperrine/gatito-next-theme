@@ -17,7 +17,7 @@ module.exports = {
   mergeConflicts: require("./mergeConflicts"),
   notificationDialogColors: require("./notificationDialogColors"),
   panelColors: require("./panelColors"),
-  peakViewColors: require("./peakViewColors"),
+  peekViewColors: require("./peekViewColors"),
   progressBar: require("./progressBar"),
   quickPicker: require("./quickPicker"),
   scrollBarControl: require("./scrollBarControl"),

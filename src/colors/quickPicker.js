@@ -6,4 +6,7 @@ const theme = require("../theme");
 module.exports = {
   "pickerGroup.border": theme.backgroundSlightLight,
   "pickerGroup.foreground": theme.foregroundDark,
+  "quickInput.background": theme.background,
+  "quickInput.foreground": theme.foreground,
+  "quickInputTitle.background": theme.missing,
 };
