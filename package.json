@@ -2,7 +2,7 @@
   "name": "gatito-next-theme",
   "displayName": "Gatito Next Theme",
   "description": "color theme forked from Gatito",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.45.0"
   },
