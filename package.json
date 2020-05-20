@@ -1,6 +1,6 @@
 {
-  "name": "leagues-theme",
-  "displayName": "Leagues Theme",
+  "name": "gatito-next-theme",
+  "displayName": "Gatito Next Theme",
   "description": "color theme forked from Gatito",
   "version": "0.0.1",
   "engines": {
@@ -15,9 +15,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Leagues Theme",
+        "label": "Gatito Next Theme",
         "uiTheme": "vs-dark",
-        "path": "./themes/leagues-theme.json"
+        "path": "./themes/gatito-next-theme.json"
       }
     ]
   },

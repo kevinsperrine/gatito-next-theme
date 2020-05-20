@@ -3,7 +3,7 @@ const colors = require("./colors");
 const tokenColors = require("./tokenColors");
 
 const theme = {
-  name: "Leagues Theme",
+  name: "Gatito Next Theme",
   colors: {
     ...colors.baseColors,
     ...colors.textColors,
@@ -43,7 +43,7 @@ const theme = {
 };
 
 fs.writeFile(
-  "themes/leagues-theme.json",
+  "themes/gatito-next-theme.json",
   JSON.stringify(theme, null, 2),
   (error) => {
     const log = error
