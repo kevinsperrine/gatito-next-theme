@@ -4,8 +4,8 @@ const theme = require("../theme");
 // https://code.visualstudio.com/api/references/theme-color#snippets
 
 module.exports = {
-  // "editor.snippetTabstopHighlightBackground": theme.missing,
-  // "editor.snippetTabstopHighlightBorder": theme.missing,
-  // "editor.snippetFinalTabstopHighlightBackground": theme.missing,
-  // "editor.snippetFinalTabstopHighlightBorder": theme.missing,
+  "editor.snippetFinalTabstopHighlightBackground": theme.backgroundDark,
+  "editor.snippetFinalTabstopHighlightBorder": theme.foregroundDark,
+  "editor.snippetTabstopHighlightBackground": theme.backgroundLight,
+  "editor.snippetTabstopHighlightBorder": theme.foreground,
 };
