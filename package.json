@@ -2,7 +2,7 @@
   "name": "gatito-next-theme",
   "displayName": "Gatito Next Theme",
   "description": "color theme forked from Gatito",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "publisher": "kevinsperrine",
   "repository": {
@@ -15,7 +15,8 @@
     "dev": "watchman-make -p 'src/**/*.js' --run 'yarn build'",
     "build": "node src/index.js",
     "vscode:prepublish": "yarn build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pub": "yarn vsce package && yarn vsce publish"
   },
   "categories": [
     "Themes"
