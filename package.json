@@ -43,8 +43,7 @@
       "yarn prettier --write",
       "yarn eslint --quiet --fix",
       "yarn build",
-      "git add ./themes/*.json",
-      "git add"
+      "git add ./themes/*.json"
     ]
   }
 }
