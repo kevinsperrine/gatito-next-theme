@@ -2,7 +2,7 @@
   "name": "gatito-next-theme",
   "displayName": "Gatito Next Theme",
   "description": "color theme forked from Gatito",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "publisher": "kevinsperrine",
   "repository": {
@@ -14,7 +14,8 @@
   "scripts": {
     "dev": "watchman-make -p 'src/**/*.js' --run 'yarn build'",
     "build": "node src/index.js",
-    "vscode:prepublish": "yarn build"
+    "vscode:prepublish": "yarn build",
+    "prepare": "husky install"
   },
   "categories": [
     "Themes"
@@ -29,18 +30,13 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.0.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.3",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.4",
-    "prettier": "^2.0.5",
-    "vsce": "^1.75.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
+    "vsce": "^1.96.3"
   },
   "lint-staged": {
     "src/**/*.js": [
