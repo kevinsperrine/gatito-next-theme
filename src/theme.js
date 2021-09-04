@@ -26,6 +26,5 @@ module.exports = {
   cyan: "#5FB3B3",
   white: "#D4D4D4",
   orange: "#F99157",
-
   missing: "#F00",
 };
