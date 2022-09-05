@@ -8,5 +8,5 @@ module.exports = {
   "pickerGroup.foreground": theme.foregroundDark,
   "quickInput.background": theme.background,
   "quickInput.foreground": theme.foreground,
-  "quickInputTitle.background": theme.missing,
+  "quickInputTitle.background": theme.background,
 };

@@ -16,7 +16,7 @@ module.exports = {
   "editorHoverWidget.foreground": theme.foreground,
   "editorHoverWidget.background": theme.backgroundDark,
   "editorHoverWidget.border": theme.backgroundSlightLight,
-  "editorHoverWidget.statusBarBackground": theme.missing,
+  "editorHoverWidget.statusBarBackground": theme.backgroundLight,
 
   "debugExceptionWidget.background": theme.backgroundDark,
   "debugExceptionWidget.border": theme.backgroundSlightLight,

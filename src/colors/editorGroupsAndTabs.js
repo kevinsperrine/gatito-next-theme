@@ -12,7 +12,7 @@ module.exports = {
   "editorGroupHeader.tabsBorder": theme.backgroundLight,
   "editorGroupHeader.border": theme.background,
   "editorGroup.emptyBackground": theme.background,
-  "editorGroup.focusedEmptyBorder": theme.missing,
+  "editorGroup.focusedEmptyBorder": theme.foregroundDark,
   "tab.activeBackground": theme.background,
   "tab.unfocusedActiveBackground": theme.backgroundDark,
   "tab.activeForeground": theme.foreground,

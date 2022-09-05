@@ -24,5 +24,5 @@ module.exports = {
   "list.filterMatchBackground": theme.foregroundDark,
   "list.filterMatchBorder": theme.transparent,
   "tree.indentGuidesStroke": theme.backgroundLight,
-  "list.deemphasizedForeground": theme.missing,
+  "list.deemphasizedForeground": theme.foregroundDark,
 };

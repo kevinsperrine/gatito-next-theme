@@ -27,4 +27,6 @@ module.exports = {
   white: "#D4D4D4",
   orange: "#F99157",
   missing: "#F00",
+
+  inherit: "inherit",
 };
