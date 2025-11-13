@@ -1,0 +1,42 @@
+const theme = require("../theme");
+
+// Symbol Icons Colors
+// https://code.visualstudio.com/api/references/theme-color#symbol-icons-colors
+
+module.exports = {
+  "symbolIcon.arrayForeground": theme.ash,
+  "symbolIcon.booleanForeground": theme.yellow,
+  "symbolIcon.classForeground": theme.yellow,
+  "symbolIcon.colorForeground": theme.ash,
+  "symbolIcon.constantForeground": theme.orange,
+  "symbolIcon.constructorForeground": theme.blue,
+  "symbolIcon.enumeratorForeground": theme.yellow,
+  "symbolIcon.enumeratorMemberForeground": theme.blue,
+  "symbolIcon.eventForeground": theme.yellow,
+  "symbolIcon.fieldForeground": theme.blue,
+  "symbolIcon.fileForeground": theme.ash,
+  "symbolIcon.folderForeground": theme.ash[700],
+  "symbolIcon.functionForeground": theme.blue,
+  "symbolIcon.interfaceForeground": theme.yellow,
+  "symbolIcon.keyForeground": theme.ash,
+  "symbolIcon.keywordForeground": theme.magenta,
+  "symbolIcon.methodForeground": theme.blue,
+  "symbolIcon.moduleForeground": theme.ash,
+  "symbolIcon.namespaceForeground": theme.ash,
+  "symbolIcon.nullForeground": theme.orange,
+  "symbolIcon.numberForeground": theme.orange,
+  "symbolIcon.objectForeground": theme.ash,
+  "symbolIcon.operatorForeground": theme.cyan,
+  "symbolIcon.packageForeground": theme.ash,
+  "symbolIcon.propertyForeground": theme.ash,
+  "symbolIcon.referenceForeground": theme.ash,
+  "symbolIcon.snippetForeground": theme.green,
+  "symbolIcon.stringForeground": theme.green,
+  "symbolIcon.structForeground": theme.yellow,
+  "symbolIcon.textForeground": theme.ash,
+  "symbolIcon.typeParameterForeground": theme.yellow,
+  "symbolIcon.unitForeground": theme.orange,
+  "symbolIcon.variableForeground": theme.ash,
+};
+
+

@@ -1,11 +1,12 @@
 const theme = require("../theme");
 
 // Scroll Bar Control
-// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_scroll-bar-control
+// https://code.visualstudio.com/api/references/theme-color#scrollbar-control
 
 module.exports = {
+  "scrollbar.background": theme.transparent,
   "scrollbar.shadow": theme.transparent,
-  "scrollbarSlider.activeBackground": theme.backgroundLight,
-  "scrollbarSlider.background": "#FFFFFF0F",
-  "scrollbarSlider.hoverBackground": "#FFFFFF1F",
+  "scrollbarSlider.activeBackground": theme.slate[400],
+  "scrollbarSlider.background": theme.ash[500][10],
+  "scrollbarSlider.hoverBackground": theme.ash[500][15],
 };

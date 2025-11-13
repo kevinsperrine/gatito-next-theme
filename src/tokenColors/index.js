@@ -5,7 +5,7 @@ module.exports = [
     name: "Comments",
     scope: "comment, punctuation.definition.comment",
     settings: {
-      foreground: "#7F7F7F",
+      foreground: theme.slate[200],
       fontStyle: "italic",
     },
   },
@@ -13,7 +13,7 @@ module.exports = [
     name: "Variable",
     scope: "variable",
     settings: {
-      foreground: theme.foreground,
+      // No foreground specified so variables change color when selected/highlighted
     },
   },
   {
@@ -24,18 +24,26 @@ module.exports = [
     },
   },
   {
-    name: "Operator, Misc",
+    name: "Operators",
     scope:
-      "keyword.operator, constant.other.color, punctuation, punctuation.definition.tag, punctuation.separator.inheritance.php, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded, keyword.other.template, keyword.other.substitution",
+      "keyword.operator, constant.other.color, keyword.other.template, keyword.other.substitution",
     settings: {
       foreground: theme.cyan,
+    },
+  },
+  {
+    name: "Punctuation",
+    scope:
+      "punctuation, punctuation.definition.tag, punctuation.separator.inheritance.php, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.section.embedded",
+    settings: {
+      // No foreground specified so punctuation changes color when selected/highlighted
     },
   },
   {
     name: "Tag",
     scope: "entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter",
     settings: {
-      foreground: "#EB606B",
+      foreground: theme.red,
     },
   },
   {
@@ -50,7 +58,7 @@ module.exports = [
     name: "Other Variable, String Link",
     scope: "support.other.variable, string.other.link",
     settings: {
-      foreground: "#F2777A",
+      foreground: theme.red[400],
     },
   },
   {
@@ -97,7 +105,7 @@ module.exports = [
     name: "entity.name.method.js",
     scope: "entity.name.method.js",
     settings: {
-      foreground: "#D8DEE9",
+      foreground: theme.ash[200],
     },
   },
   {
@@ -105,14 +113,14 @@ module.exports = [
     scope:
       "meta.class-method.js entity.name.function.js, variable.function.constructor",
     settings: {
-      foreground: "#D8DEE9",
+      foreground: theme.ash[200],
     },
   },
   {
     name: "Attributes",
     scope: "entity.other.attribute-name",
     settings: {
-      foreground: "#BB80B3",
+      foreground: theme.magenta
     },
   },
   {
@@ -133,7 +141,7 @@ module.exports = [
     name: "Changed",
     scope: "markup.changed",
     settings: {
-      foreground: "#BB80B3",
+      foreground: theme.magenta
     },
   },
   {
@@ -161,7 +169,7 @@ module.exports = [
     name: "Search Results Nums",
     scope: "constant.numeric.line-number.find-in-files - match",
     settings: {
-      foreground: "#AB7967",
+      foreground: theme.orange[600],
     },
   },
   {
@@ -191,25 +199,25 @@ module.exports = [
   {
     scope: "token.info-token",
     settings: {
-      foreground: theme.blue, // "#6796e6",
+      foreground: theme.blue,
     },
   },
   {
     scope: "token.warn-token",
     settings: {
-      foreground: theme.yellow, // "#cd9731",
+      foreground: theme.yellow,
     },
   },
   {
     scope: "token.error-token",
     settings: {
-      foreground: theme.red, // "#f44747",
+      foreground: theme.red,
     },
   },
   {
     scope: "token.debug-token",
     settings: {
-      foreground: "#b267e6",
+      foreground: theme.magenta[400],
     },
   },
   {
@@ -222,6 +230,111 @@ module.exports = [
     scope: "text.html.basic entity.other.attribute-name.html",
     settings: {
       fontStyle: "italic",
+    },
+  },
+  {
+    name: "Entity Name Type",
+    scope: "entity.name.type",
+    settings: {
+      foreground: theme.yellow,
+    },
+  },
+  {
+    name: "Entity Name Namespace",
+    scope: "entity.name.namespace",
+    settings: {
+      foreground: theme.ash[700],
+    },
+  },
+  {
+    name: "Support Type",
+    scope: "support.type",
+    settings: {
+      foreground: theme.yellow,
+    },
+  },
+  {
+    name: "Support Class",
+    scope: "support.class",
+    settings: {
+      foreground: theme.yellow,
+    },
+  },
+  {
+    name: "Support Function",
+    scope: "support.function",
+    settings: {
+      foreground: theme.blue,
+    },
+  },
+  {
+    name: "Support Constant",
+    scope: "support.constant",
+    settings: {
+      foreground: theme.orange,
+    },
+  },
+  {
+    name: "Entity Name Function Member",
+    scope: "entity.name.function.member",
+    settings: {
+      foreground: theme.blue,
+    },
+  },
+  {
+    name: "Variable Other Constant",
+    scope: "variable.other.constant",
+    settings: {
+      foreground: theme.orange,
+    },
+  },
+  {
+    name: "Variable Other Property",
+    scope: "variable.other.property",
+    settings: {
+      foreground: theme.ash,
+    },
+  },
+  {
+    name: "Variable Other Enummember",
+    scope: "variable.other.enummember",
+    settings: {
+      foreground: theme.orange,
+    },
+  },
+  {
+    name: "Variable Other Event",
+    scope: "variable.other.event",
+    settings: {
+      foreground: theme.cyan,
+    },
+  },
+  {
+    name: "Storage Type Struct",
+    scope: "storage.type.struct",
+    settings: {
+      foreground: theme.yellow,
+    },
+  },
+  {
+    name: "Entity Name Type Interface",
+    scope: "entity.name.type.interface",
+    settings: {
+      foreground: theme.yellow,
+    },
+  },
+  {
+    name: "Entity Name Type Enum",
+    scope: "entity.name.type.enum",
+    settings: {
+      foreground: theme.yellow,
+    },
+  },
+  {
+    name: "Entity Name Function Preprocessor",
+    scope: "entity.name.function.preprocessor",
+    settings: {
+      foreground: theme.blue,
     },
   },
 ];

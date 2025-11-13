@@ -1,14 +1,27 @@
 const theme = require("../theme");
 
 // Panel Colors
-// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_panel-colors
+// https://code.visualstudio.com/api/references/theme-color#panel-colors
 
 module.exports = {
-  "panel.background": theme.background,
-  "panel.border": theme.backgroundSlightLight,
-  "panel.dropBackground": theme.missing,
-  "panelTitle.activeBorder": theme.backgroundSlightLight,
-  "panelTitle.activeForeground": theme.foreground,
-  "panelTitle.inactiveForeground": theme.foregroundDark,
+  "panel.background": theme.slate,
+  "panel.border": theme.slate[500],
+  "panel.dropBackground": theme.slate[400],
+  "panelTitle.activeBorder": theme.slate[500],
+  "panelTitle.activeForeground": theme.ash,
+  "panelTitle.inactiveForeground": theme.ash[700],
+  "panelTitle.border": theme.slate[500],
+  "panelTitleBadge.background": theme.blue,
+  "panelTitleBadge.foreground": theme.slate,
   "panelInput.border": theme.transparent,
+  "panelSection.border": theme.slate[500],
+  "panelSection.dropBackground": theme.slate[400],
+  "panelSectionHeader.background": theme.slate[400],
+  "panelSectionHeader.foreground": theme.ash,
+  "panelSectionHeader.border": theme.slate[500],
+  "panelStickyScroll.background": theme.slate[400],
+  "panelStickyScroll.border": theme.slate[500],
+  "panelStickyScroll.shadow": theme.slate[800],
+  "outputView.background": theme.slate,
+  "outputViewStickyScroll.background": theme.slate[400],
 };
