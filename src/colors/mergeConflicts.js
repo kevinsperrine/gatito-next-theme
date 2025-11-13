@@ -4,20 +4,20 @@ const theme = require("../theme");
 // https://code.visualstudio.com/docs/getstarted/theme-color-reference#_merge-conflicts
 
 module.exports = {
-  "merge.currentHeaderBackground": theme.slate[700],
-  "merge.currentContentBackground": theme.slate[700],
-  "merge.incomingHeaderBackground": theme.slate[700],
-  "merge.incomingContentBackground": theme.slate[700],
-  "merge.border": theme.slate[200],
-  "merge.commonContentBackground": theme.slate,
-  "merge.commonHeaderBackground": theme.slate,
+  "merge.currentHeaderBackground": theme.blue[500][50],
+  "merge.currentContentBackground": theme.blue[500][30],
+  "merge.incomingHeaderBackground": theme.yellow[500][50],
+  "merge.incomingContentBackground": theme.yellow[500][30],
+  "merge.border": theme.slate[500],
+  "merge.commonContentBackground": theme.slate[400][20],
+  "merge.commonHeaderBackground": theme.slate[400][30],
 
   "editorOverviewRuler.currentContentForeground": theme.red[700],
   "editorOverviewRuler.incomingContentForeground": theme.red[700],
   "editorOverviewRuler.commonContentForeground": theme.slate[400],
   "editorOverviewRuler.commentForeground": theme.blue,
   "editorOverviewRuler.commentUnresolvedForeground": theme.yellow,
-  "mergeEditor.change.background": theme.blue[500][25],
+  "mergeEditor.change.background": theme.blue[500][30],
   "mergeEditor.change.word.background": theme.blue,
   "mergeEditor.conflict.unhandledUnfocused.border": theme.red,
   "mergeEditor.conflict.unhandledFocused.border": theme.red,

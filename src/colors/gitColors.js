@@ -14,5 +14,6 @@ module.exports = {
   "gitDecoration.ignoredResourceForeground": theme.ash[700],
   "gitDecoration.conflictingResourceForeground": theme.red,
   "gitDecoration.submoduleResourceForeground": theme.ash[700],
-  "git.blame.editorDecorationForeground": theme.ash[700],
+  "git.blame.editorDecorationBackground": theme.slate,
+  "git.blame.editorDecorationForeground": theme.ash[800],
 };

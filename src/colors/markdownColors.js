@@ -10,5 +10,3 @@ module.exports = {
   "markdownAlert.warning.foreground": theme.yellow,
   "markdownAlert.caution.foreground": theme.red,
 };
-
-

@@ -11,5 +11,3 @@ module.exports = {
   "commandCenter.activeBorder": theme.slate[200],
   "commandCenter.inactiveForeground": theme.ash[700],
 };
-
-

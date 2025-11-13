@@ -20,14 +20,12 @@ module.exports = {
   "notebook.outputContainerBorderColor": theme.slate[200],
   "notebook.selectedCellBackground": theme.slate[700],
   "notebook.selectedCellBorder": theme.slate[200],
-  "notebook.symbolHighlightBackground": theme.slate[400],
+  "notebook.symbolHighlightBackground": theme.slate[400][50],
   "notebookScrollbarSlider.activeBackground": theme.ash[50],
-  "notebookScrollbarSlider.background": theme.ash[500][25],
+  "notebookScrollbarSlider.background": theme.ash[500][30],
   "notebookScrollbarSlider.hoverBackground": theme.ash[500][40],
   "notebookStatusErrorIcon.foreground": theme.red,
   "notebookStatusRunningIcon.foreground": theme.blue,
   "notebookStatusSuccessIcon.foreground": theme.green,
   "notebookEditorOverviewRuler.runningCellForeground": theme.blue,
 };
-
-

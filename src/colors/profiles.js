@@ -8,4 +8,3 @@ module.exports = {
   "profileBadge.background": theme.slate[400],
   "profiles.sashBorder": theme.slate[200],
 };
-

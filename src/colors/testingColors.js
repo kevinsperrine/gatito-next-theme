@@ -13,7 +13,7 @@ module.exports = {
   "testing.message.error.decorationForeground": theme.red,
   "testing.message.error.lineBackground": theme.red[900][30],
   "testing.message.info.decorationForeground": theme.blue,
-  "testing.message.info.lineBackground": theme.blue[500][25],
+  "testing.message.info.lineBackground": theme.blue[500][30],
   "testing.runAction": theme.green,
   "testing.message.hint.decorationForeground": theme.yellow,
   "testing.message.hint.lineBackground": theme.yellow,
@@ -40,4 +40,3 @@ module.exports = {
   "testing.coverCountBadgeBackground": theme.blue,
   "testing.coverCountBadgeForeground": theme.slate,
 };
-

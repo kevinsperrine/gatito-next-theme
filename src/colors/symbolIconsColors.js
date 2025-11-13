@@ -38,5 +38,3 @@ module.exports = {
   "symbolIcon.unitForeground": theme.orange,
   "symbolIcon.variableForeground": theme.ash,
 };
-
-

@@ -2,7 +2,6 @@ const fs = require("fs");
 const colors = require("./colors");
 const tokenColors = require("./tokenColors");
 const semanticTokenColors = require("./semanticTokenColors");
-const themeModule = require("./theme");
 
 const theme = {
   name: "Gatito Next Theme",
@@ -79,7 +78,11 @@ function handleProxyObjects(obj) {
   const result = {};
 
   for (const [key, value] of Object.entries(obj)) {
-    if (typeof value === "object" && value !== null && typeof value.toJSON === "function") {
+    if (
+      typeof value === "object" &&
+      value !== null &&
+      typeof value.toJSON === "function"
+    ) {
       result[key] = value.toJSON();
       continue;
     }
@@ -97,10 +100,12 @@ function handleProxyObjects(obj) {
 const cleanedTheme = {
   ...theme,
   colors: handleProxyObjects(theme.colors),
-  tokenColors: theme.tokenColors ? theme.tokenColors.map(token => ({
-    ...token,
-    settings: handleProxyObjects(token.settings),
-  })) : [],
+  tokenColors: theme.tokenColors
+    ? theme.tokenColors.map((token) => ({
+        ...token,
+        settings: handleProxyObjects(token.settings),
+      }))
+    : [],
   semanticTokenColors: handleProxyObjects(theme.semanticTokenColors),
 };
 

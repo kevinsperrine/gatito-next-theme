@@ -6,5 +6,3 @@ const theme = require("../theme");
 module.exports = {
   "simpleFindWidget.sashBorder": theme.slate[200],
 };
-
-

@@ -7,5 +7,3 @@ module.exports = {
   "window.activeBorder": theme.slate[400],
   "window.inactiveBorder": theme.slate[700],
 };
-
-

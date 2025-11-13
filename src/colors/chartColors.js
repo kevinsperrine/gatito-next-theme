@@ -16,5 +16,3 @@ module.exports = {
   "chart.axis": theme.ash[700],
   "chart.guide": theme.slate[200],
 };
-
-

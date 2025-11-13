@@ -9,4 +9,3 @@ module.exports = {
   "keyboardShortcutTable.headerBackground": theme.slate[700],
   "keyboardShortcutTable.rowsBackground": theme.slate,
 };
-

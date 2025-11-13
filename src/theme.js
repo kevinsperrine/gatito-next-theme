@@ -22,13 +22,13 @@ function generateColorWithScale(baseColor, name) {
   if (!scale) return {};
 
   const result = {};
-  
+
   const darkSteps = ["700", "800", "900", "950"];
   const mediumSteps = ["400", "500", "600"];
   const lightSteps = ["50", "100", "200", "300"];
   const alphaValues = [10, 20, 30, 40, 50, 60, 70, 80, 90];
   const allSteps = [...lightSteps, ...mediumSteps, ...darkSteps];
-  
+
   allSteps.forEach((step) => {
     const alphaObj = {};
     alphaValues.forEach((alpha) => {
@@ -38,7 +38,7 @@ function generateColorWithScale(baseColor, name) {
       result[`${name}${step}`] = alphaObj;
     }
   });
-  
+
   Object.keys(scale).forEach((step) => {
     result[`${name}${step}_base`] = scale[step];
   });
@@ -53,14 +53,24 @@ function generateTheme() {
   const slateScale = generateColorWithScale(base.slate, "slate");
   const originalForeground = "#D4D4D4";
   const ashScale = generateColorWithScale(originalForeground, "ash");
-  
+
   const nestedTheme = {};
   Object.assign(nestedTheme, base);
   nestedTheme.transparent = "#FFFFFF00";
   nestedTheme.black = ashScale["ash500_base"] || originalForeground;
   nestedTheme.white = ashScale["ash500_base"] || originalForeground;
 
-  const colorNames = ["red", "green", "blue", "yellow", "cyan", "magenta", "orange", "slate", "ash"];
+  const colorNames = [
+    "red",
+    "green",
+    "blue",
+    "yellow",
+    "cyan",
+    "magenta",
+    "orange",
+    "slate",
+    "ash",
+  ];
   const colorScales = {
     red: generateColorWithScale(base.red, "red"),
     green: generateColorWithScale(base.green, "green"),
@@ -74,11 +84,11 @@ function generateTheme() {
   };
 
   const flatTheme = { ...nestedTheme };
-  
+
   colorNames.forEach((colorName) => {
     const scale = colorScales[colorName];
     nestedTheme[colorName] = {};
-    
+
     Object.keys(scale).forEach((key) => {
       if (key.endsWith("_base")) {
         const step = key.replace(`${colorName}`, "").replace("_base", "");
@@ -86,15 +96,18 @@ function generateTheme() {
       } else {
         const step = key.replace(`${colorName}`, "");
         nestedTheme[colorName][step] = scale[key];
-        
-        const baseColorForScale = colorName === "slate" ? base.slate :
-                                  colorName === "ash" ? originalForeground :
-                                  base[colorName];
+
+        const baseColorForScale =
+          colorName === "slate"
+            ? base.slate
+            : colorName === "ash"
+            ? originalForeground
+            : base[colorName];
         const fullScale = colorUtils.generateColorScale(baseColorForScale);
         if (fullScale && fullScale[step]) {
           flatTheme[`${colorName}${step}`] = fullScale[step];
         }
-        
+
         Object.keys(scale[key]).forEach((alpha) => {
           flatTheme[`${colorName}${step}-${alpha}`] = scale[key][alpha];
         });
@@ -107,78 +120,141 @@ function generateTheme() {
    * Returns a Proxy that handles both the color value and alpha chaining
    */
   function createColorScale(colorName, scale) {
-    return new Proxy({}, {
-      get(target, prop) {
-        if (typeof prop === "string" && /^\d+$/.test(prop)) {
-          const key = `${colorName}${scale}-${prop}`;
-          return flatTheme[key] || undefined;
-        }
-        
-        if (prop === "toJSON") {
-          return () => flatTheme[`${colorName}${scale}`] || "";
-        }
-        
-        if (prop === Symbol.toPrimitive || prop === "valueOf" || prop === "toString") {
-          return () => flatTheme[`${colorName}${scale}`] || "";
-        }
-        
-        return undefined;
-      },
-      
-      ownKeys() {
-        const alphas = ["10", "15", "25", "30", "40", "50", "80"];
-        return alphas.filter(alpha => flatTheme[`${colorName}${scale}-${alpha}`]);
-      },
-      
-      getOwnPropertyDescriptor(target, prop) {
-        if (this.ownKeys().includes(prop)) {
-          return {
-            enumerable: true,
-            configurable: true,
-            value: this.get(target, prop),
-          };
-        }
-        return undefined;
-      },
-      
-      has(target, prop) {
-        return this.ownKeys().includes(prop);
-      },
-    });
+    return new Proxy(
+      {},
+      {
+        get(target, prop) {
+          if (typeof prop === "string" && /^\d+$/.test(prop)) {
+            const key = `${colorName}${scale}-${prop}`;
+            return flatTheme[key] || undefined;
+          }
+
+          if (prop === "toJSON") {
+            return () => flatTheme[`${colorName}${scale}`] || "";
+          }
+
+          if (
+            prop === Symbol.toPrimitive ||
+            prop === "valueOf" ||
+            prop === "toString"
+          ) {
+            return () => flatTheme[`${colorName}${scale}`] || "";
+          }
+
+          return undefined;
+        },
+
+        ownKeys() {
+          const alphas = ["10", "15", "25", "30", "40", "50", "80"];
+          return alphas.filter(
+            (alpha) => flatTheme[`${colorName}${scale}-${alpha}`]
+          );
+        },
+
+        getOwnPropertyDescriptor(target, prop) {
+          if (this.ownKeys().includes(prop)) {
+            return {
+              enumerable: true,
+              configurable: true,
+              value: this.get(target, prop),
+            };
+          }
+          return undefined;
+        },
+
+        has(target, prop) {
+          return this.ownKeys().includes(prop);
+        },
+      }
+    );
   }
 
   /**
    * Create a chained color accessor
-   * Allows: 
+   * Allows:
    *   - theme.slate (alias to theme.slate500)
    *   - theme.slate.400 (returns color scale accessor)
    *   - theme.slate.400.30 (returns alpha variant)
    */
   function createColorChain(colorName) {
-    return new Proxy({}, {
+    return new Proxy(
+      {},
+      {
+        get(target, prop) {
+          if (typeof prop === "string" && /^\d+$/.test(prop)) {
+            return createColorScale(colorName, prop);
+          }
+
+          if (prop === "toJSON") {
+            return () => flatTheme[`${colorName}500`] || "";
+          }
+
+          if (
+            prop === Symbol.toPrimitive ||
+            prop === "valueOf" ||
+            prop === "toString"
+          ) {
+            return () => flatTheme[`${colorName}500`] || "";
+          }
+
+          return undefined;
+        },
+
+        ownKeys() {
+          const scales = [
+            "50",
+            "100",
+            "200",
+            "300",
+            "400",
+            "500",
+            "600",
+            "700",
+            "800",
+            "900",
+            "950",
+          ];
+          return scales.filter((scale) => flatTheme[`${colorName}${scale}`]);
+        },
+
+        getOwnPropertyDescriptor(target, prop) {
+          if (this.ownKeys().includes(prop)) {
+            return {
+              enumerable: true,
+              configurable: true,
+              value: this.get(target, prop),
+            };
+          }
+          return undefined;
+        },
+
+        has(target, prop) {
+          return this.ownKeys().includes(prop);
+        },
+      }
+    );
+  }
+
+  const theme = new Proxy(
+    {},
+    {
       get(target, prop) {
-        if (typeof prop === "string" && /^\d+$/.test(prop)) {
-          return createColorScale(colorName, prop);
+        if (colorNames.includes(prop)) {
+          return createColorChain(prop);
         }
-        
-        if (prop === "toJSON") {
-          return () => flatTheme[`${colorName}500`] || "";
-        }
-        
-        if (prop === Symbol.toPrimitive || prop === "valueOf" || prop === "toString") {
-          return () => flatTheme[`${colorName}500`] || "";
-        }
-        
-        return undefined;
+
+        return nestedTheme[prop];
       },
-      
+
       ownKeys() {
-        const scales = ["50", "100", "200", "300", "400", "500", "600", "700", "800", "900", "950"];
-        return scales.filter(scale => flatTheme[`${colorName}${scale}`]);
+        return Object.keys(nestedTheme);
       },
-      
+
       getOwnPropertyDescriptor(target, prop) {
-        if (this.ownKeys().includes(prop)) {
+        if (
+          colorNames.includes(prop) ||
+          Object.prototype.hasOwnProperty.call(nestedTheme, prop)
+        ) {
           return {
             enumerable: true,
             configurable: true,
@@ -187,41 +263,15 @@ function generateTheme() {
         }
         return undefined;
       },
-      
-      has(target, prop) {
-        return this.ownKeys().includes(prop);
-      },
-    });
-  }
 
-  const theme = new Proxy({}, {
-    get(target, prop) {
-      if (colorNames.includes(prop)) {
-        return createColorChain(prop);
-      }
-      
-      return nestedTheme[prop];
-    },
-    
-    ownKeys() {
-      return Object.keys(nestedTheme);
-    },
-    
-    getOwnPropertyDescriptor(target, prop) {
-      if (colorNames.includes(prop) || nestedTheme.hasOwnProperty(prop)) {
-        return {
-          enumerable: true,
-          configurable: true,
-          value: this.get(target, prop),
-        };
-      }
-      return undefined;
-    },
-    
-    has(target, prop) {
-      return colorNames.includes(prop) || nestedTheme.hasOwnProperty(prop);
-    },
-  });
+      has(target, prop) {
+        return (
+          colorNames.includes(prop) ||
+          Object.prototype.hasOwnProperty.call(nestedTheme, prop)
+        );
+      },
+    }
+  );
 
   return theme;
 }

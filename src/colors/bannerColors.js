@@ -8,5 +8,3 @@ module.exports = {
   "banner.foreground": theme.ash,
   "banner.iconForeground": theme.blue,
 };
-
-

@@ -8,7 +8,7 @@ module.exports = {
   namespace: {
     foreground: theme.ash[700],
   },
-  
+
   type: {
     foreground: theme.yellow,
   },
@@ -30,7 +30,7 @@ module.exports = {
   enum: {
     foreground: theme.yellow,
   },
-  
+
   function: {
     foreground: theme.blue,
   },
@@ -43,7 +43,7 @@ module.exports = {
   macro: {
     foreground: theme.blue,
   },
-  
+
   variable: {
     foreground: theme.ash,
   },
@@ -69,4 +69,3 @@ module.exports = {
     foreground: theme.cyan,
   },
 };
-

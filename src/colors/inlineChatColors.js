@@ -15,4 +15,3 @@ module.exports = {
   "inlineChatDiff.inserted": theme.green[600][20],
   "inlineChatDiff.removed": theme.red[400][10],
 };
-

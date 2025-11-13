@@ -120,7 +120,7 @@ module.exports = [
     name: "Attributes",
     scope: "entity.other.attribute-name",
     settings: {
-      foreground: theme.magenta
+      foreground: theme.magenta,
     },
   },
   {
@@ -141,7 +141,7 @@ module.exports = [
     name: "Changed",
     scope: "markup.changed",
     settings: {
-      foreground: theme.magenta
+      foreground: theme.magenta,
     },
   },
   {

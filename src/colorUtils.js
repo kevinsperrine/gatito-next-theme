@@ -1,7 +1,7 @@
 /**
  * Color utility functions for generating systematic color variations
  * Based on OKLCH color space (like Tailwind v4) for perceptual uniformity
- * 
+ *
  * References:
  * - https://bottosson.github.io/posts/oklab/
  * - https://tailwindcss.com/docs/colors
@@ -21,7 +21,7 @@ function hexToRgb(hex) {
       b: (b << 4) | b,
     };
   }
-  
+
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   return result
     ? {
@@ -36,7 +36,10 @@ function hexToRgb(hex) {
  * Convert RGB to hex
  */
 function rgbToHex(r, g, b) {
-  return "#" + [r, g, b].map((x) => Math.round(x).toString(16).padStart(2, "0")).join("");
+  return (
+    "#" +
+    [r, g, b].map((x) => Math.round(x).toString(16).padStart(2, "0")).join("")
+  );
 }
 
 /**
@@ -58,9 +61,9 @@ function linearRgbToOklab(r, g, b) {
   const s_ = Math.cbrt(s);
 
   return {
-    L: 0.2104542553 * l_ + 0.7936177850 * m_ - 0.0040720468 * s_,
-    a: 1.9779984951 * l_ - 2.4285922050 * m_ + 0.4505937099 * s_,
-    b: 0.0259040371 * l_ + 0.7827717662 * m_ - 0.8086757660 * s_,
+    L: 0.2104542553 * l_ + 0.793617785 * m_ - 0.0040720468 * s_,
+    a: 1.9779984951 * l_ - 2.428592205 * m_ + 0.4505937099 * s_,
+    b: 0.0259040371 * l_ + 0.7827717662 * m_ - 0.808675766 * s_,
   };
 }
 
@@ -70,7 +73,7 @@ function linearRgbToOklab(r, g, b) {
 function oklabToLinearRgb(L, a, b) {
   const l_ = L + 0.3963377774 * a + 0.2158037573 * b;
   const m_ = L - 0.1055613458 * a - 0.0638541728 * b;
-  const s_ = L - 0.0894841775 * a - 1.2914855480 * b;
+  const s_ = L - 0.0894841775 * a - 1.291485548 * b;
 
   const l = l_ * l_ * l_;
   const m = m_ * m_ * m_;
@@ -79,7 +82,7 @@ function oklabToLinearRgb(L, a, b) {
   return {
     r: +4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s,
     g: -1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s,
-    b: -0.0041960863 * l - 0.7034186147 * m + 1.7076147010 * s,
+    b: -0.0041960863 * l - 0.7034186147 * m + 1.707614701 * s,
   };
 }
 
@@ -148,7 +151,7 @@ function oklchToRgb(L, C, H) {
 /**
  * Generate a Tailwind-style color scale from a base color
  * Scale: 50 (lightest), 100, 200, 300, 400, 500 (base), 600, 700, 800, 900, 950 (darkest)
- * 
+ *
  * Based on Tailwind's approach: adjust lightness while preserving chroma and hue
  * @param {string} baseColor - Base color in hex format (#RRGGBB)
  * @returns {Object} Object with keys 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950
@@ -159,7 +162,7 @@ function generateColorScale(baseColor) {
 
   const baseOklch = rgbToOklch(rgb.r, rgb.g, rgb.b);
   const baseLightness = baseOklch.L;
-  
+
   const lightnessValues = {
     50: Math.min(0.98, baseLightness + (1 - baseLightness) * 0.6),
     100: Math.min(0.96, baseLightness + (1 - baseLightness) * 0.5),
@@ -168,14 +171,14 @@ function generateColorScale(baseColor) {
     400: Math.min(0.75, baseLightness + (1 - baseLightness) * 0.2),
     500: baseLightness,
     600: Math.max(0.15, baseLightness * 0.75),
-    700: Math.max(0.12, baseLightness * 0.60),
-    800: Math.max(0.10, baseLightness * 0.45),
-    900: Math.max(0.08, baseLightness * 0.30),
-    950: Math.max(0.05, baseLightness * 0.20),
+    700: Math.max(0.12, baseLightness * 0.6),
+    800: Math.max(0.1, baseLightness * 0.45),
+    900: Math.max(0.08, baseLightness * 0.3),
+    950: Math.max(0.05, baseLightness * 0.2),
   };
 
   const scale = {};
-  
+
   for (const [step, lightness] of Object.entries(lightnessValues)) {
     // Reduce chroma for very light/dark colors to prevent oversaturation
     let chroma = baseOklch.C;
@@ -201,7 +204,7 @@ function generateColorScale(baseColor) {
 function generateAlphaVariants(color, alphas = [80, 50, 30, 25, 15, 10]) {
   const variants = {};
   alphas.forEach((alpha) => {
-    const alphaHex = Math.round(alpha / 100 * 255)
+    const alphaHex = Math.round((alpha / 100) * 255)
       .toString(16)
       .padStart(2, "0")
       .toUpperCase();

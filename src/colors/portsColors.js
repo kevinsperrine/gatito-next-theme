@@ -6,5 +6,3 @@ const theme = require("../theme");
 module.exports = {
   "ports.iconRunningProcessForeground": theme.green,
 };
-
-

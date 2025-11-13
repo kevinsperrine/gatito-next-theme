@@ -7,5 +7,3 @@ module.exports = {
   "commentsView.resolvedIcon": theme.ash[700],
   "commentsView.unresolvedIcon": theme.blue,
 };
-
-

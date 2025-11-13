@@ -8,5 +8,5 @@ module.exports = {
   "titleBar.activeForeground": theme.ash[700],
   "titleBar.inactiveBackground": theme.slate[600],
   "titleBar.inactiveForeground": theme.ash[700],
-  "titleBar.border": theme.slate[700],
+  "titleBar.border": theme.ash[800],
 };

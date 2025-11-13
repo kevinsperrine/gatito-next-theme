@@ -12,5 +12,3 @@ module.exports = {
   "gauge.errorBackground": theme.red,
   "gauge.errorForeground": theme.slate,
 };
-
-

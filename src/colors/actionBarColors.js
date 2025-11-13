@@ -6,5 +6,3 @@ const theme = require("../theme");
 module.exports = {
   "actionBar.toggledBackground": theme.slate[400],
 };
-
-

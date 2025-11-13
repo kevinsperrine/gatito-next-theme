@@ -25,13 +25,15 @@ module.exports = {
   "gitlens.decorations.ignoredForegroundColor": theme.ash[700],
   "gitlens.decorations.modifiedForegroundColor": theme.blue,
   "gitlens.decorations.renamedForegroundColor": theme.cyan,
-  "gitlens.decorations.statusMergingOrRebasingConflictForegroundColor": theme.red,
+  "gitlens.decorations.statusMergingOrRebasingConflictForegroundColor":
+    theme.red,
   "gitlens.decorations.statusMergingOrRebasingForegroundColor": theme.yellow,
   "gitlens.decorations.untrackedForegroundColor": theme.green,
   "gitlens.decorations.workspaceCurrentForegroundColor": theme.green,
   "gitlens.decorations.workspaceRepoMissingForegroundColor": theme.ash[700],
   "gitlens.decorations.workspaceRepoOpenForegroundColor": theme.green,
-  "gitlens.decorations.worktreeHasUncommittedChangesForegroundColor": theme.yellow,
+  "gitlens.decorations.worktreeHasUncommittedChangesForegroundColor":
+    theme.yellow,
   "gitlens.decorations.worktreeMissingForegroundColor": theme.red,
 
   "gitlens.graphChangesColumnAddedColor": theme.green,
@@ -80,7 +82,9 @@ module.exports = {
   "gitlens.lineHighlightBackgroundColor": theme.cyan[900][30],
   "gitlens.lineHighlightOverviewRulerColor": theme.cyan,
 
-  "gitlens.trailingLineBackgroundColor": theme.slate[700],
-  "gitlens.trailingLineForegroundColor": theme.ash[700],
-};
+  "gitlens.trailingLineBackgroundColor": theme.transparent,
+  "gitlens.trailingLineForegroundColor": theme.ash[500][60],
 
+  "git.blame.editorDecorationBackground": theme.slate,
+  "git.blame.editorDecorationForeground": theme.ash[800],
+};

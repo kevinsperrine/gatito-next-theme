@@ -12,5 +12,3 @@ module.exports = {
   "editorActionList.focusForeground": theme.ash,
   "editorActionList.focusBackground": theme.slate[400],
 };
-
-

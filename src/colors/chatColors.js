@@ -19,4 +19,3 @@ module.exports = {
   "chat.checkpointSeparator": theme.slate[500],
   "chatManagement.sashBorder": theme.slate[500],
 };
-

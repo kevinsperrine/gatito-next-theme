@@ -19,4 +19,3 @@ module.exports = {
   "scmGraph.historyItemHoverDefaultLabelBackground": theme.slate[400],
   "scm.providerBorder": theme.slate[200],
 };
-

@@ -9,5 +9,3 @@ module.exports = {
   "keybindingLabel.border": theme.slate[200],
   "keybindingLabel.bottomBorder": theme.slate[200],
 };
-
-
