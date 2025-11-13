@@ -2,10 +2,10 @@ const theme = require("../theme");
 
 module.exports = {
   "debugIcon.breakpointForeground": theme.red,
-  "debugIcon.breakpointDisabledForeground": theme.redAlpha50,
+  "debugIcon.breakpointDisabledForeground": theme.red[500][50],
   "debugIcon.breakpointUnverifiedForeground": theme.yellow,
   "debugIcon.breakpointCurrentStackframeForeground": theme.red,
-  "debugIcon.breakpointStackframeForeground": theme.foreground,
+  "debugIcon.breakpointStackframeForeground": theme.ash,
   "debugIcon.startForeground": theme.green,
   "debugIcon.pauseForeground": theme.yellow,
   "debugIcon.stopForeground": theme.red,

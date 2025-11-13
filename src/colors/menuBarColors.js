@@ -4,14 +4,14 @@ const theme = require("../theme");
 // https://code.visualstudio.com/api/references/theme-color#menu-bar-colors
 
 module.exports = {
-  "menubar.selectionForeground": theme.foregroundAlpha50,
-  "menubar.selectionBackground": theme.foregroundDark,
-  "menubar.selectionBorder": theme.backgroundDark,
-  "menu.foreground": theme.foreground,
-  "menu.background": theme.backgroundDark,
-  "menu.selectionForeground": theme.foregroundAlpha50,
-  "menu.selectionBackground": theme.backgroundLight,
-  "menu.selectionBorder": theme.backgroundLight,
-  "menu.separatorBackground": theme.backgroundLight,
-  "menu.border": theme.foreground,
+  "menubar.selectionForeground": theme.ash,
+  "menubar.selectionBackground": theme.slate[400],
+  "menubar.selectionBorder": theme.transparent,
+  "menu.foreground": theme.ash,
+  "menu.background": theme.slate[400],
+  "menu.selectionForeground": theme.ash,
+  "menu.selectionBackground": theme.slate[400],
+  "menu.selectionBorder": theme.transparent,
+  "menu.separatorBackground": theme.slate[400],
+  "menu.border": theme.slate[500],
 };

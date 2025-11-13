@@ -5,8 +5,8 @@ const theme = require("../theme");
 
 module.exports = {
   "breadcrumb.activeSelectionForeground": theme.blue,
-  "breadcrumb.background": theme.background,
+  "breadcrumb.background": theme.slate,
   "breadcrumb.focusForeground": theme.blue,
-  "breadcrumb.foreground": theme.foreground,
-  "breadcrumbPicker.background": theme.backgroundDark,
+  "breadcrumb.foreground": theme.ash,
+  "breadcrumbPicker.background": theme.slate[700],
 };

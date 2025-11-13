@@ -2,14 +2,14 @@
   "name": "gatito-next-theme",
   "displayName": "Gatito Next Theme",
   "description": "color theme forked from Gatito",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "license": "MIT",
   "publisher": "kevinsperrine",
   "repository": {
     "url": "https://github.com/kevinsperrine/gatito-next-theme"
   },
   "engines": {
-    "vscode": "^1.45.0"
+    "vscode": "^1.74.0"
   },
   "scripts": {
     "dev": "watchman-make -p 'src/**/*.js' --run 'yarn build'",

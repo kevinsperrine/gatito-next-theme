@@ -1,15 +1,19 @@
 const theme = require("../theme");
 
 // Base Colors
-// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_base-colors
+// https://code.visualstudio.com/api/references/theme-color#base-colors
 
 module.exports = {
+  "contrastActiveBorder": theme.transparent,
+  "contrastBorder": theme.slate[500],
+  "focusBorder": theme.slate,
+  "foreground": theme.ash,
+  "disabledForeground": theme.ash[700],
+  "widget.border": theme.slate[500],
+  "widget.shadow": theme.slate[800],
   "selection.background": theme.yellow,
-  "widget.shadow": theme.backgroundDark,
-  // "icon.foreground": theme.foregroundDark
-  // TODO: he have no fucking clue how it works
-  descriptionForeground: theme.foregroundDark,
-  errorForeground: theme.red,
-  focusBorder: theme.backgroundLight,
-  foreground: theme.foreground,
+  "descriptionForeground": theme.ash[700],
+  "errorForeground": theme.red,
+  "icon.foreground": theme.ash[700],
+  "sash.hoverBorder": theme.slate[400],
 };

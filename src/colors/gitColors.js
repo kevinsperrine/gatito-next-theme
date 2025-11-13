@@ -1,14 +1,18 @@
 const theme = require("../theme");
 
 // Git Colors
-// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_git-colors
+// https://code.visualstudio.com/api/references/theme-color#git-colors
 
 module.exports = {
   "gitDecoration.addedResourceForeground": theme.green,
-  "gitDecoration.conflictingResourceForeground": theme.red,
-  "gitDecoration.deletedResourceForeground": theme.red,
-  "gitDecoration.ignoredResourceForeground": theme.foregroundDark,
   "gitDecoration.modifiedResourceForeground": theme.blue,
-  "gitDecoration.submoduleResourceForeground": theme.missing,
+  "gitDecoration.deletedResourceForeground": theme.red,
+  "gitDecoration.renamedResourceForeground": theme.cyan,
+  "gitDecoration.stageModifiedResourceForeground": theme.blue,
+  "gitDecoration.stageDeletedResourceForeground": theme.red,
   "gitDecoration.untrackedResourceForeground": theme.green,
+  "gitDecoration.ignoredResourceForeground": theme.ash[700],
+  "gitDecoration.conflictingResourceForeground": theme.red,
+  "gitDecoration.submoduleResourceForeground": theme.ash[700],
+  "git.blame.editorDecorationForeground": theme.ash[700],
 };

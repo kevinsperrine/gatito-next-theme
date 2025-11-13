@@ -1,11 +1,15 @@
 const theme = require("../theme");
 
 // Welcome Page
-// https://code.visualstudio.com/docs/getstarted/theme-color-reference#_welcome-page
+// https://code.visualstudio.com/api/references/theme-color#welcome-page-colors
 
 module.exports = {
-  "welcomePage.background": theme.background,
-  "welcomePage.buttonBackground": theme.backgroundDark,
-  "welcomePage.buttonHoverBackground": theme.backgroundSlightLight,
-  "walkThrough.embeddedEditorBackground": theme.backgroundDark,
+  "welcomePage.background": theme.slate,
+  "welcomePage.progress.background": theme.slate[700],
+  "welcomePage.progress.foreground": theme.blue,
+  "welcomePage.tileBackground": theme.slate[700],
+  "welcomePage.tileHoverBackground": theme.slate[400],
+  "welcomePage.tileBorder": theme.slate[200],
+  "walkThrough.embeddedEditorBackground": theme.slate[700],
+  "walkthrough.stepTitle.foreground": theme.ash,
 };
