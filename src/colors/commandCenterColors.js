@@ -4,8 +4,8 @@ const theme = require("../theme");
 // https://code.visualstudio.com/api/references/theme-color#command-center-colors
 
 module.exports = {
-  "commandCenter.background": theme.slate[700],
-  "commandCenter.border": theme.slate[200],
+  "commandCenter.background": theme.slate,
+  "commandCenter.border": theme.transparent,
   "commandCenter.foreground": theme.ash,
   "commandCenter.activeBackground": theme.slate[400],
   "commandCenter.activeBorder": theme.slate[200],
